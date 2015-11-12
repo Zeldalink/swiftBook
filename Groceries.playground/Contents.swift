@@ -34,3 +34,5 @@ let yourCities = Set(["Chicago", "San Francisco", "Jacksonville"])
 myCities.elementsEqual(yourCities)
 //challenge
 groceryBag.union(friendsGroceryBag).intersect(roommatesGroceryBag)
+
+
