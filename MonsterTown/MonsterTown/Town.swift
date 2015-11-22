@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+
+struct Town {
+    var population = 5422
+    var numberOfStoplights = 4
+    func printTownDescription(){
+      print("Population: \(population); number of stoplights: \(numberOfStoplights)")
+    }
+    mutating func changePopulation(amount: Int){
+      population += amount
+    }
+}
+

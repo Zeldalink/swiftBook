@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class Monster {
+    var town: Town? = Town()
+    var name = "Monster"
+    
+    func terrorizeTown(){
+        if let _ = town{
+          print("\(name) is terrorizzing a town")
+        }else{
+          print("\(name) hasn't found a town to terrorize yet...")
+        }
+    }
+}
