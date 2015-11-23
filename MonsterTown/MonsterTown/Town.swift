@@ -10,13 +10,15 @@ import Foundation
 
 
 struct Town {
-    var population = 5422
+    var population = 2942
     var numberOfStoplights = 4
     func printTownDescription(){
       print("Population: \(population); number of stoplights: \(numberOfStoplights)")
     }
     mutating func changePopulation(amount: Int){
-      population += amount
+       precondition(population > 0, "no se puede restar una poblacion en 0")
+       precondition(population >= amount, "no puedes matar a más gente de lo que vive")
+        population += amount
     }
 }
 

@@ -14,7 +14,7 @@ class Zombie : Monster{
     //sobreescribiendo el método de la clase Monster
     // final significa que ya no puede volver a sobreescribir en otra subclase
    final override func terrorizeTown() {
-        town?.changePopulation(-10)
+        town?.changePopulation(-20)
         super.terrorizeTown()
     }
     
